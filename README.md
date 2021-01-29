@@ -6,7 +6,7 @@ In this Application multiple Apps are created Step by step:
 
 **2)** ***Then Second app hello just for basics HTML/CSS***
 
-**3)** ***Then Third app Tasks which will let you know about the*** **Functions** ***and*** **GET POST** ***methods in DJANGO***
+**3)** ***Then Third app Tasks which will let you know about the*** **Functions** ***and*** **GET POST** ***methods in DJANGO and sessions are also included***
 
 **HERE YOU CAN SEE THE SCREENSHOTS**
 
