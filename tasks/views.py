@@ -20,14 +20,13 @@ def index(request):
 def add(request):
     if request.method == "POST":
         form = NewTaskForm(request.POST)
-        if form.is_valid():
-            task = form.cleaned_data["task"]
-            request.session["tasks"] += [task]
-            return HttpResponseRedirect(reverse("tasks:index"))
-        else:
+        if not form.is_valid():
             return render(request,"tasks/add.html",{
                 "form":form
             })
+        task = form.cleaned_data["task"]
+        request.session["tasks"] += [task]
+        return HttpResponseRedirect(reverse("tasks:index"))
     return render(request,"tasks/add.html",{
         "form": NewTaskForm()
     })
